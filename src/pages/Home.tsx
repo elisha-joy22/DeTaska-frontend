@@ -1,9 +1,2 @@
-export default function Home() {
-    return (
-      <div className="container">
-        <h1>Welcome to DeTaska 🚀</h1>
-        <p>Your productivity starts here.</p>
-      </div>
-    );
-  }
-  
+const Home = () => <h1 className="text-center text-2xl mt-10">Welcome to DeTaska</h1>;
+export default Home;
