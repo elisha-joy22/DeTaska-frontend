@@ -1,13 +1,10 @@
-import Sidebar from "../components/Sidebar";
+import DashboardLayout from "../layouts/DashboardLayout";
 
 const Dashboard = () => {
   return (
-    <div className="flex">
-      <Sidebar />
-      <main className="flex-1 p-5">
-        <h1 className="text-2xl font-bold">Welcome to the Dashboard</h1>
-      </main>
-    </div>
+    <DashboardLayout>
+      <h2 className="text-2xl font-bold">Welcome to Your Dashboard</h2>
+    </DashboardLayout>
   );
 };
 
