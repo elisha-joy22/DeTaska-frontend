@@ -1,10 +1,16 @@
-import DashboardLayout from "../layouts/DashboardLayout";
+import DashboardWidgets from "../components/DashboardWidgets";
+import RecentTasks from "../components/RecentTasks";
+import QuickActions from "../components/QuickActions";
 
 const Dashboard = () => {
   return (
-    <DashboardLayout>
-      <h2 className="text-2xl font-bold">Welcome to Your Dashboard</h2>
-    </DashboardLayout>
+    <div className="p-4">
+      <DashboardWidgets />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <RecentTasks />
+        <QuickActions />
+      </div>
+    </div>
   );
 };
 
