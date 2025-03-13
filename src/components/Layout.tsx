@@ -4,10 +4,10 @@ import Footer from "./Footer";
 
 const Layout = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <main className="flex-grow">
-        <Outlet /> {/* This will render the current page */}
+    <div className="container">
+      <Navbar/>
+      <main>
+        <Outlet /> 
       </main>
       <Footer />
     </div>

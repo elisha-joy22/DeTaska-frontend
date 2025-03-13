@@ -1,0 +1,114 @@
+/* Navbar Wrapper */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2%;
+    min-height: auto;
+    max-height: 10%;
+}
+
+/* Left Section - Logo */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+/* Center Section - Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--navlink-hover-color);
+    text-shadow: 2px 2px 8px rgba(161, 134, 134, 0.1);
+}
+
+/*Right Section - Search & Toggle */
+.navbar-right {
+    display: flex;
+    align-items:flex-end;
+    gap: 15px;
+}
+
+/*  Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: 1px solid var(--text-color);
+    background-color: var(--text-color);
+}
+
+.search-box input {
+    padding: 6px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    min-width: 180px;
+    color: var(--bg-color);
+}
+
+.search-box img {
+    width: 18px;
+    cursor: pointer;
+}
+
+/* Theme Toggle Icon */
+.toggle-icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 3%;
+    }
+    .nav-links {
+        gap: 15px;
+    }
+    .search-box input {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .navbar-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box {
+        display: none; 
+    }
+}

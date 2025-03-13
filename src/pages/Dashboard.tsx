@@ -6,12 +6,12 @@ const Dashboard = () => {
   return (
     <div className="p-4">
       <DashboardWidgets />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         <RecentTasks />
         <QuickActions />
       </div>
     </div>
   );
 };
-
 export default Dashboard;
+
